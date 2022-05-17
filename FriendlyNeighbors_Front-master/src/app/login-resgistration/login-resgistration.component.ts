@@ -34,6 +34,7 @@ export class LoginResgistrationComponent implements OnInit {
   });
 
   onSubmit(): void {
+    this.router.navigateByUrl('/')
     console.log(
       'Username:' +
         this.residentLoginForm.get('username').value +

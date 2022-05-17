@@ -10,7 +10,7 @@ import {BusinessModule} from './business/business.module';
 import {NotificationModule} from './notification/notification.module';
 import {HttpClient} from '@angular/common/http';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
-import {HttpErrorInterceptor} from './utility/HttpErrorInterceptorService.service';
+
 import {NeighborhoodModule} from './neighborhood/neighborhood.module';
 import {LandingModule} from './landing/landing.module';
 import {Routes, RouterModule} from '@angular/router';
@@ -83,14 +83,7 @@ const routes: Routes = [
 
   ],
   bootstrap: [AppComponent],
-  providers: [
-    VisibilityService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: HttpErrorInterceptor,
-      multi: true
-    }
-  ]
+
 })
 export class AppModule {
 }
