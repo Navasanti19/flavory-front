@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div [ngbCollapse]="isCollapsed" class = "backgroundC">
+
+
+  <br>
+  <div *ngFor="let r of comments; let i = index">
+
+
+    <div class="row">
+
+
+        <div class="col-1">
+        <img *ngIf="r.author.profilePicture != null" class="profilePicture" src="{{r.author.profilePicture}}}">
+        <img *ngIf="r.author.profilePicture == null" class="profilePicture" src="  https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS66Ukl8UTumuzg5glSqKAM0GLgv3VGuGLpmlp5muFBURXWWY8X&usqp=CAU">
+      </div>
+
+      <div class="col-1">
+        <div class="spacer"></div>
+      </div>
+
+       <div class="col-9">
+        <div class="name">{{r.author.name}}<span class="text"> &nbsp; {{r.text}}</span></div>
+      </div>
+
+      <div class="col-2">
+        <div class="spacer"></div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="date">{{getDate(r.date)}}  </div>
+
+
+    <br>
+
+
+  </div>
+
+
+</div>
+
+</body>
+
+</html>

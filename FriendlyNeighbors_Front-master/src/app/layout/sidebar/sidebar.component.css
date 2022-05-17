@@ -1,0 +1,149 @@
+:host {
+
+}
+
+
+#body-row {
+  margin-left: 0;
+
+  background-color: #046d08;
+  max-height: 100%;
+  max-width: fit-content;
+}
+
+#sidebar-container {
+  background-color: #046d08;
+  padding: 0;
+
+}
+
+.menu {
+
+      background-color: #046d08;
+  border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+
+}
+
+
+.menu-collapsed {
+  display: inline;
+  color: white;
+
+}
+
+
+/* Menu item*/
+#sidebar-container .list-group a {
+  height: 50px;
+  color: #ffffff;
+  background: #7d292d;
+
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+  background-color: #4b177d;
+
+}
+
+.sidebar-submenu {
+  font-size: 0.9rem;
+  background-color: #4b177d;
+
+}
+
+/* Separators */
+.sidebar-separator-title {
+  background-color: transparent;
+  height: 35px;
+
+}
+
+.sidebar-separator {
+  background-color: transparent;
+  height: 10px;
+
+}
+
+.logo-separator {
+  background-color: #4b177d;
+  height: 60px;
+
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+
+
+}
+
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+
+
+}
+
+
+.btn-outline-purple {
+  background-color: #18971d !important;
+
+}
+
+.btn-outline-purple:hover {
+  color: #212529;
+  background-color: #22c627 !important;
+  border-color: #22c627
+
+
+}
+
+.btn-outline-purple.focus, .btn-outline-purple:focus {
+  box-shadow: 0 0 0 .1rem rgba(60, 18, 102, 0.5)
+}
+
+.btn-outline-purple.disabled, .btn-outline-purple:disabled {
+  color: #4b177d;
+  background-color: transparent !important;
+}
+
+.btn-outline-purple:not(:disabled):not(.disabled).active, .btn-outline-purple:not(:disabled):not(.disabled):active, .show > .btn-outline-purple.dropdown-toggle {
+  color: #212529;
+  background-color: #441773 !important;
+  border-color: #0f071e
+}
+
+.btn-outline-purple:not(:disabled):not(.disabled).active:focus, .btn-outline-purple:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .1rem rgba(75, 23, 125, 0.5);
+  background-color: #441773 !important;
+}
+
+
+.collapsing {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+}
